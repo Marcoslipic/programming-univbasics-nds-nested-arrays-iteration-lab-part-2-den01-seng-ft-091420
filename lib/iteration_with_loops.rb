@@ -8,9 +8,7 @@ def find_min_in_nested_arrays(src)
   while row_index < src.count do 
     element_index = 0 
     while element_index < src[row_index].count do 
-      if (hourly_temp > src[row_index][element_index])
-        hourly_temp = src[row_index][element_index]
-      end
+        hourly_temp = src[row_index][element_index].min()
       element_index += 1 
       lowest_daily_temp.push(hourly_temp)
   end
