@@ -12,7 +12,9 @@ def find_min_in_nested_arrays(src)
       element_index += 1 
       lowest_daily_temp.push(hourly_temp)
   end
+  lowest_daily_temp.push(hourly_temp)
   row_index += 1 
 end
+
 return lowest_daily_temp
 end
